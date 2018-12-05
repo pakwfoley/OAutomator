@@ -1,0 +1,7 @@
+<h2>OAutomator</h2>
+<div class="col-md-4">
+  <% if @last_test_results[:client_credentials] %>
+    <%= content_tag(:p, "Client Credentials: #{@last_test_results[:client_credentials]}") %>
+  <% end %>
+</div>
+<%= link_to "Run Tests", action: "run" %>
